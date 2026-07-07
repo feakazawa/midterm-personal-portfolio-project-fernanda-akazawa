@@ -3,35 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fernanda Akazawa | About</title>
+    <title>Fernanda Akazawa | Front-End Developer</title>
     <link rel="stylesheet" href="css/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
     <nav class="navbar">
-      <a class="icon" href="#home"
-        ><img src="./images/house-solid.png" alt="home icon"
-      /></a>
+      <a class="icon" href="#home"><i class="fa-solid fa-xl fa-house"></i></a>
 
-      <a class="icon" href="#about"
-        ><img src="./images/user-solid.png" alt="user icon"
-      /></a>
+      <a class="icon" href="#about"><i class="fa-solid fa-xl fa-user"></i></a>
 
       <a class="icon" href="#projects"
-        ><img src="./images/folder-open-solid.png" alt="open folder icon"
-      /></a>
+        ><i class="fa-solid fa-xl fa-folder-open"></i
+      ></a>
 
       <a class="icon" href="#skills"
-        ><img src="./images/graduation-cap-solid.png" alt="graduation cap icon"
-      /></a>
+        ><i class="fa-solid fa-xl fa-graduation-cap"></i
+      ></a>
 
       <a class="icon" href="#work-experience"
-        ><img src="./images/industry-solid.png" alt="industry icon"
-      /></a>
+        ><i class="fa-solid fa-xl fa-industry"></i
+      ></a>
 
       <a class="icon" href="#contact"
-        ><img src="./images/envelope-solid.png" alt="envelope icon"
-      /></a>
+        ><i class="fa-solid fa-xl fa-envelope"></i
+      ></a>
     </nav>
 
     <main>
@@ -39,10 +43,10 @@
         <h1>Welcome to my homepage!</h1>
       </section>
 
-      <section id="about" class="margin-bt-paragraph">
+      <section id="about">
         <h2>Hi, nice to meet you!!</h2>
 
-        <div class="container">
+        <div class="container-about">
           <img
             class="round-image"
             src="./images/fernanda-akazawa.png"
@@ -66,7 +70,48 @@
       </section>
 
       <section id="projects">
-        <h2>My Projects</h2>
+        <h2>What about take a look at my projects?</h2>
+
+        <div class="container-project">
+          <p>You can find all project's implementation at my GitHub page.</p>
+          <a href="https://github.com/feakazawa" target="_blank"
+            ><i class="fa-brands fa-4x fa-github"></i
+          ></a>
+        </div>
+
+        <h3>My Last Projects</h3>
+
+        <div class="img-text">
+          <img
+            class="img-project"
+            src="./images/minimalissimo.png"
+            alt="Minimassilimo about page"
+          />
+          <div>
+            <a
+              href="https://github.com/feakazawa/minimalissimo-about-page"
+              target="_blank"
+              >Minimalissimo</a
+            >
+            <span>- practicing flex, grid and position elements. </span>
+          </div>
+        </div>
+
+        <div class="img-text">
+          <img
+            class="img-project"
+            src="./images/minimalissimo.png"
+            alt="Minimassilimo about page"
+          />
+          <div>
+            <a
+              href="https://github.com/feakazawa/minimalissimo-about-page"
+              target="_blank"
+              >Minimalissimo</a
+            >
+            <span>- practicing flex, grid and position elements. </span>
+          </div>
+        </div>
       </section>
 
       <section id="skills">
