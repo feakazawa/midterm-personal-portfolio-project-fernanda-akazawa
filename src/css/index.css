@@ -74,8 +74,19 @@ h2 {
   margin-bottom: calc(var(--margin-size) / 2);
 }
 
+.container-project {
+  display: grid;
+  grid-template-columns: 60% 20%;
+  justify-content: space-around;
+}
+
+.bg-git {
+  /* width: clamp(calc(var(--icon-size) * 0.5, 70%, calc(var(--icon-size)))); */
+  width: calc(var(--image-width) * 0.6);
+}
+
 @media (max-width: 600px) {
-  .container {
+  .container-about {
     display: flex;
     flex-direction: column;
   }
@@ -94,7 +105,7 @@ h2 {
     flex-direction: column;
   }
 
-  .container {
+  .container-about {
     display: grid;
     grid-template-columns: 35% 50%;
     text-align: justify;
@@ -120,7 +131,7 @@ h2 {
     flex-direction: column;
   }
 
-  .container {
+  .container-about {
     display: grid;
     grid-template-columns: 35% 50%;
     text-align: justify;
