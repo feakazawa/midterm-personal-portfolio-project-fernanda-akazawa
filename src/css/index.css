@@ -24,6 +24,7 @@ body {
 
 main {
   margin-top: var(--margin-size);
+  margin-left: calc(var(--margin-size) * 4);
   padding: var(--padding-size);
   background: #fff;
   border-radius: var(--border-corner);
@@ -46,8 +47,18 @@ h2 {
   font-size: var(--header-lg);
 }
 
+h3 {
+  padding: var(--padding-size);
+}
+
 .navbar {
   display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  height: 100vh;
   justify-content: space-around;
   align-items: center;
   background-color: #333;
@@ -60,10 +71,6 @@ h2 {
   filter: invert(100%);
 }
 
-.margin-bt-paragraph p {
-  padding: calc(var(--padding-size) / 2);
-}
-
 #home {
   height: 100vh;
 }
@@ -74,15 +81,41 @@ h2 {
   margin-bottom: calc(var(--margin-size) / 2);
 }
 
+#projects {
+  background-color: orange;
+  padding: var(--padding-size);
+  border-radius: calc(var(--border-corner) * 2);
+}
+
 .container-project {
   display: grid;
-  grid-template-columns: 60% 20%;
-  justify-content: space-around;
+  grid-template-columns: 0.6fr 0.2fr;
+  padding: var(--padding-size);
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .bg-git {
-  /* width: clamp(calc(var(--icon-size) * 0.5, 70%, calc(var(--icon-size)))); */
   width: calc(var(--image-width) * 0.6);
+  border-radius: 50%;
+}
+
+.img-text {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-size);
+  font-size: var(--text-base);
+  margin-bottom: var(--margin-size);
+  align-items: center;
+}
+
+.img-text a {
+  text-decoration: none;
+}
+
+.img-project {
+  width: 100%;
+  border-radius: calc(var(--border-corner) * 2);
 }
 
 @media (max-width: 600px) {
@@ -93,21 +126,9 @@ h2 {
 }
 
 @media (min-width: 601px) and (max-width: 1280px) {
-  main {
-    margin-left: calc(var(--margin-size) * 4);
-  }
-
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    flex-direction: column;
-  }
-
   .container-about {
     display: grid;
-    grid-template-columns: 35% 50%;
+    grid-template-columns: 0.35fr 0.5fr;
     text-align: justify;
     margin-left: calc(var(--margin-size) * 2);
   }
@@ -119,21 +140,9 @@ h2 {
 }
 
 @media (min-width: 1281px) {
-  main {
-    margin-left: calc(var(--margin-size) * 4);
-  }
-
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    flex-direction: column;
-  }
-
   .container-about {
     display: grid;
-    grid-template-columns: 35% 50%;
+    grid-template-columns: 0.35fr 0.5fr;
     text-align: justify;
     margin-left: calc(var(--margin-size) * 2);
   }
