@@ -16,6 +16,7 @@
   --h2-project-color: #fb6f92;
   --h3-project-color: #ffb3c6;
   --link-project-color: #4ecdc4;
+  --bg-projects: #034078;
 }
 
 * {
@@ -26,6 +27,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: var(--bg-color);
+  color: var(--white-font);
   /* padding: var(--padding-size); */
 }
 
@@ -46,14 +48,14 @@ main {
 h1 {
   /* padding: var(--padding-size); */
   font-size: var(--header-xxl);
-  color: var(--white-font);
+  /* color: var(--white-font); */
 }
 
 h2 {
   /* margin-bottom: var(--margin-size); */
   /* padding: var(--padding-size); */
   font-size: var(--header-lg);
-  color: var(--white-font);
+  /* color: var(--white-font); */
 }
 
 h3 {
@@ -71,7 +73,6 @@ h3 {
   justify-content: space-around;
   align-items: center;
   background-color: var(--bg-color);
-  color: #fff;
   padding: calc(var(--padding-size) / 1.5);
 }
 
@@ -92,6 +93,7 @@ h3 {
   background-color: #f4f4f4;
   border-radius: var(--border-corner);
   padding: var(--padding-size);
+  color: var(--bg-color);
 }
 
 #about h2 {
@@ -105,8 +107,7 @@ h3 {
 }
 
 #projects {
-  background-color: #034078;
-  color: var(--white-font);
+  background-color: var(--bg-projects);
   padding: var(--padding-size);
   border-radius: calc(var(--border-corner) * 2);
 }
@@ -150,8 +151,75 @@ h3 {
   border-radius: calc(var(--border-corner) * 2);
 }
 
-/* #skills {
-} */
+#skills {
+  padding: var(--padding-size);
+}
+
+.container-skills {
+  border: 3px solid;
+  border-radius: calc(var(--border-corner) * 2);
+  width: 70vw;
+  padding-bottom: var(--padding-size);
+  margin-bottom: calc(var(--margin-size) * 2);
+  transition: all 0.3s;
+}
+
+.container-skills:hover {
+  box-shadow: 0 3px 10px; /*shadow-horizontal shadow-vertical blur-efffect*/
+}
+
+.color-front {
+  color: #008000;
+}
+
+.color-back {
+  color: #9f86c0;
+}
+
+.color-lang {
+  color: #1b9aaa;
+}
+
+.color-db {
+  color: #f6aa1c;
+}
+
+.color-tools {
+  color: #e27396;
+}
+
+.color-sap {
+  color: #016db7;
+}
+
+.color-idiom {
+  color: #358f80;
+}
+
+.container-skills h3 {
+  margin: 0px 0px;
+}
+
+.elements-skill {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: space-around;
+  column-gap: 10px;
+  padding: var(--padding-size);
+}
+
+.elements-skill p {
+  font-size: small;
+  border: 2px solid;
+  padding: calc(var(--padding-size) / 4);
+  border-radius: 30%;
+  text-align: center;
+}
+
+.elements-skill p:hover {
+  color: white;
+}
 
 /* #work-experience {
 } */
