@@ -27,6 +27,7 @@
   --color-tools: #e27396;
   --color-sap: #016db7;
   --color-idiom: #358f80;
+  --header-career: #1e88e5;
 }
 
 * {
@@ -96,6 +97,7 @@ h3 {
   border-radius: var(--border-corner);
   padding: var(--padding-size);
   color: var(--bg-color);
+  margin-bottom: calc(var(--margin-size) * 2);
 }
 
 #about h2 {
@@ -221,8 +223,45 @@ h3 {
   color: var(--white-font);
 }
 
-/* #work-experience {
-} */
+#work-experience {
+  padding: var(--padding-size);
+}
+
+.container-work {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: calc(var(--margin-size) * 2);
+  margin-left: calc(var(--margin-size) * 2);
+}
+
+.icon-position {
+  position: absolute;
+  margin-left: -15px;
+}
+
+.text-box {
+  border-left: 4px solid;
+  padding-left: 60px;
+}
+
+.text-box h3 {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  color: var(--header-career);
+}
+
+.text-box h4 {
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+.text-box p {
+  margin-top: 0px;
+}
+
+.text-box li {
+  margin-bottom: var(--margin-size);
+}
 
 /* #contact {
 } */
