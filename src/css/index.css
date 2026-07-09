@@ -20,14 +20,9 @@
   --link-project-color: #4ecdc4;
   --bg-projects: #034078;
   --bg-about: #f4f4f4;
-  --color-front: #008000;
-  --color-back: #9f86c0;
-  --color-lang: #1b9aaa;
-  --color-db: #f6aa1c;
-  --color-tools: #e27396;
-  --color-sap: #016db7;
-  --color-idiom: #358f80;
+  --bg-elem-tools: #e27396;
   --header-career: #1e88e5;
+  --header-type-work: #016db7;
 }
 
 * {
@@ -58,11 +53,11 @@ h1 {
 }
 
 h2 {
-  font-size: var(--header-lg);
+  font-size: var(--header-xl);
 }
 
 h3 {
-  padding: var(--padding-size);
+  font-size: var(--header-lg);
 }
 
 .navbar {
@@ -158,69 +153,45 @@ h3 {
   padding: var(--padding-size);
 }
 
-.container-skills {
-  border: var(--border-size) solid;
-  border-radius: calc(var(--border-corner) * 2);
-  width: 100%;
-  margin-bottom: calc(var(--margin-size) * 2);
-  transition: all 0.3s;
+#skills h3 {
+  color: var(--bg-color);
 }
 
-.container-skills:hover {
-  box-shadow: 0 3px 10px; /*shadow-horizontal shadow-vertical blur-efffect*/
+#skills h4 {
+  font-size: x-large;
+  color: var(--bg-projects);
 }
 
-.color-front {
-  color: var(--color-front);
-}
-
-.color-back {
-  color: var(--color-back);
-}
-
-.color-lang {
-  color: var(--color-lang);
-}
-
-.color-db {
-  color: var(--color-db);
-}
-
-.color-tools {
-  color: var(--color-tools);
-}
-
-.color-sap {
-  color: var(--color-sap);
-}
-
-.color-idiom {
-  color: var(--color-idiom);
-}
-
-.container-skills h3 {
-  margin: 0px 0px;
-}
-
-.elements-skill {
-  display: grid;
-  grid-template-columns: 0.45fr 0.45fr;
-  justify-content: center;
-  align-content: space-around;
-  column-gap: var(--col-gap);
+.bg-skills {
+  background-color: var(--bg-about);
   padding: var(--padding-size);
+  border-radius: calc(var(--border-corner) * 2);
 }
 
-.elements-skill p {
-  font-size: medium;
-  border: var(--border-size) solid;
-  padding: calc(var(--padding-size) / 4);
-  border-radius: 30%;
-  text-align: center;
+.container-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.elements-skill p:hover {
+.skill-element {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.skill-element p {
+  border: 2px solid var(--bg-color);
+  border-radius: 5%;
+  height: fit-content;
+  padding: 10px;
+  color: var(--bg-color);
+}
+
+.skill-element p:hover {
+  background-color: var(--bg-elem-tools);
   color: var(--white-font);
+  border-color: var(--bg-elem-tools);
 }
 
 #work-experience {
@@ -228,7 +199,7 @@ h3 {
 }
 
 .h2-work-color {
-  color: var(--color-sap);
+  color: var(--header-type-work);
 }
 
 .container-work {
@@ -314,7 +285,6 @@ h3 {
   .padding-margin {
     padding-left: calc(var(--margin-size) * 2);
     margin-bottom: calc(var(--margin-size) * 2);
-    font-size: medium;
     transition: all 0.3s;
   }
 
