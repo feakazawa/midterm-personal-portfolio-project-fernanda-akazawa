@@ -276,6 +276,7 @@ h3 {
     margin-bottom: calc(var(--margin-size) * 2);
     transition: all 0.2s;
     font-size: medium;
+    transition: all 0.3s;
   }
 
   .padding-margin:hover {
@@ -314,6 +315,7 @@ h3 {
     padding-left: calc(var(--margin-size) * 2);
     margin-bottom: calc(var(--margin-size) * 2);
     font-size: medium;
+    transition: all 0.3s;
   }
 
   .padding-margin:hover {
@@ -370,6 +372,7 @@ h3 {
     padding-left: calc(var(--margin-size) * 2);
     margin-bottom: calc(var(--margin-size) * 2);
     font-size: medium;
+    transition: all 0.3s;
   }
 
   .padding-margin:hover {
