@@ -3,35 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fernanda Akazawa | About</title>
+    <title>Fernanda Akazawa | Front-End Developer</title>
     <link rel="stylesheet" href="css/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
     <nav class="navbar">
-      <a class="icon" href="#home"
-        ><img src="./images/house-solid.png" alt="home icon"
-      /></a>
+      <a class="icon" href="#home" title="Home"
+        ><i class="fa-solid fa-xl fa-house"></i
+      ></a>
 
-      <a class="icon" href="#about"
-        ><img src="./images/user-solid.png" alt="user icon"
-      /></a>
+      <a class="icon" href="#about" title="About"
+        ><i class="fa-solid fa-xl fa-user"></i
+      ></a>
 
-      <a class="icon" href="#projects"
-        ><img src="./images/folder-open-solid.png" alt="open folder icon"
-      /></a>
+      <a class="icon" href="#projects" title="Projects"
+        ><i class="fa-solid fa-xl fa-folder-open"></i
+      ></a>
 
-      <a class="icon" href="#skills"
-        ><img src="./images/graduation-cap-solid.png" alt="graduation cap icon"
-      /></a>
+      <a class="icon" href="#skills" title="Skills"
+        ><i class="fa-solid fa-xl fa-graduation-cap"></i
+      ></a>
 
-      <a class="icon" href="#work-experience"
-        ><img src="./images/industry-solid.png" alt="industry icon"
-      /></a>
+      <a class="icon" href="#work-experience" title="Work Experience"
+        ><i class="fa-solid fa-xl fa-industry"></i
+      ></a>
 
-      <a class="icon" href="#contact"
-        ><img src="./images/envelope-solid.png" alt="envelope icon"
-      /></a>
+      <a class="icon" href="#contact" title="Contact"
+        ><i class="fa-solid fa-xl fa-envelope"></i
+      ></a>
     </nav>
 
     <main>
@@ -39,10 +47,10 @@
         <h1>Welcome to my homepage!</h1>
       </section>
 
-      <section id="about" class="margin-bt-paragraph">
+      <section id="about">
         <h2>Hi, nice to meet you!!</h2>
 
-        <div class="container">
+        <div class="container-about">
           <img
             class="round-image"
             src="./images/fernanda-akazawa.png"
@@ -50,7 +58,7 @@
           />
 
           <p>
-            My name is Fernanda Akazawa and I'm a student learning Front End Web
+            My name is Fernanda Akazawa and I'm a student learning Frontend Web
             Development. Besides that, I already worked as a Math teacher,
             Statistic Consultant and Backend Developer.
           </p>
@@ -66,15 +74,172 @@
       </section>
 
       <section id="projects">
-        <h2>My Projects</h2>
+        <h2>What about take a look at my projects?</h2>
+
+        <div class="container-project">
+          <p>You can find all my projects implementation at GitHub page.</p>
+          <a href="https://github.com/feakazawa" target="_blank"
+            ><i class="fa-brands fa-4x fa-github"></i
+          ></a>
+        </div>
+
+        <h3>My Last Projects</h3>
+
+        <div class="img-text">
+          <img
+            class="img-project"
+            src="./images/minimalissimo.png"
+            alt="Minimassilimo about page"
+          />
+          <div>
+            <a href="https://www.google.com/" target="_blank">My portfolio</a>
+            <span>- how I built this website. </span>
+          </div>
+        </div>
+
+        <div class="img-text">
+          <img
+            class="img-project"
+            src="./images/minimalissimo.png"
+            alt="Minimassilimo about page"
+          />
+          <div>
+            <a
+              href="https://github.com/feakazawa/minimalissimo-about-page"
+              target="_blank"
+              >Minimalissimo</a
+            >
+            <span>- practicing flex, grid and position elements. </span>
+          </div>
+        </div>
       </section>
 
       <section id="skills">
-        <h2>Skills</h2>
+        <h2>My skills</h2>
+
+        <div class="bg-skills">
+          <h3>Softwares, databases and tools</h3>
+
+          <div class="container-skill">
+            <h4>Frontend</h4>
+            <div class="skill-element">
+              <p>JavaScript</p>
+              <p>HTML and CSS</p>
+            </div>
+          </div>
+
+          <div class="container-skill">
+            <h4>Backend</h4>
+            <div class="skill-element">
+              <p>Docker</p>
+              <p>Kubernetes</p>
+              <p>AWS Services</p>
+              <p>Azure Pipelines</p>
+              <p>Grafana</p>
+              <p>Dynatrace</p>
+              <p>Kiali</p>
+              <p>Kibana</p>
+            </div>
+          </div>
+
+          <div class="container-skill">
+            <h4>Programming Language</h4>
+
+            <div class="skill-element">
+              <p>Python</p>
+              <p>Go</p>
+            </div>
+          </div>
+
+          <div class="container-skill">
+            <h4>Databases</h4>
+
+            <div class="skill-element">
+              <p>MySQL</p>
+              <p>Redis</p>
+              <p>Postgres</p>
+            </div>
+          </div>
+
+          <div class="container-skill">
+            <h4>Tools and Workflow</h4>
+
+            <div class="skill-element">
+              <p>Git</p>
+              <p>GitHub</p>
+              <p>VS Code</p>
+            </div>
+          </div>
+
+          <div class="container-skill">
+            <h4>SAP Technologies</h4>
+
+            <div class="skill-element">
+              <p>SAP HANA</p>
+              <p>SAP S4/HANA</p>
+              <p>SAP BTP Kyma</p>
+              <p>SAP Analytics Cloud</p>
+              <p>SAP Fiori</p>
+            </div>
+          </div>
+
+          <div class="container-skill">
+            <h4>Languages</h4>
+
+            <div class="skill-element">
+              <p>English</p>
+              <p>Portuguese</p>
+              <p>Spanish</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="work-experience">
-        <h2>Work Experience</h2>
+        <h2>My Career History</h2>
+
+        <h2 class="h2-work-color">Professional</h2>
+
+        <div class="container-work">
+          <div class="career-title-format left-line right-line">
+            <h3>Development Specialist</h3>
+            <h4>Sao Leopoldo - RS, Brazil</h4>
+            <p>2023 - 2025</p>
+          </div>
+          <span class="padding-margin">
+            As a backend developer, I've designed, deployed, and operated
+            cloud-native microservices using Golang on SAP BTP Kyma (Kubernetes
+            + Istio). I've also delivered cloud service monitoring and
+            troubleshooting using Dynatrace, Grafana, Kiali and Kibana.
+          </span>
+
+          <div class="career-title-format left-line right-line">
+            <h3>Analytics Consultant Associate</h3>
+            <h4>Sao Leopoldo - RS, Brazil</h4>
+            <p>2023 - 2025</p>
+          </div>
+          <span class="padding-margin">
+            As an analytical consultant, I've delivered machine learning models
+            and predictive analytics solutions for Utility and Manufacturing
+            clients, improving forecasting accuracy.
+          </span>
+        </div>
+
+        <h2 class="h2-work-color">Education</h2>
+
+        <div class="career-title-format left-line left-line-educ">
+          <h3>Big Data, Data Science and Data Analytics Specialization</h3>
+          <div>Universidade do Vale do Rio dos Sinos - Unisinos</div>
+          <h4>Sao Leopoldo - RS, Brazil</h4>
+          <p>2020 - 2021</p>
+        </div>
+
+        <div class="career-title-format left-line left-line-educ">
+          <h3>Bachelor in Statistics</h3>
+          <div>Universidade de Sao Paulo - USP</div>
+          <h4>Sao Carlos - SP, Brazil</h4>
+          <p>2012 - 2017</p>
+        </div>
       </section>
 
       <section id="contact">
