@@ -4,7 +4,7 @@
   --image-width: 140px;
   --border-corner: 5px;
   --icon-size: 40px;
-  --border-size: 3px;
+  --border-size: 2px;
   --col-gap: 20px;
   --text-base: 1rem; /* 16px */
   --header-base: 1.5625rem;
@@ -14,6 +14,7 @@
   --icon-color: #1282a2;
   --bg-color: #0a1128;
   --icon-github-color: #89c2d9;
+  --bg-github-hover: #1e88e5;
   --white-font: #ffffff;
   --h2-project-color: #fb6f92;
   --h3-project-color: #ffb3c6;
@@ -21,8 +22,8 @@
   --bg-projects: #034078;
   --bg-about: #f4f4f4;
   --bg-elem-tools: #e27396;
-  --header-career: #1e88e5;
   --header-type-work: #016db7;
+  --h3-career-work: #00a8e8;
 }
 
 * {
@@ -105,9 +106,7 @@ h3 {
 }
 
 #projects {
-  background-color: var(--bg-projects);
   padding: var(--padding-size);
-  border-radius: calc(var(--border-corner) * 2);
 }
 
 #projects h2 {
@@ -119,22 +118,27 @@ h3 {
 }
 
 .container-project {
-  display: grid;
-  grid-template-columns: 0.6fr 0.2fr;
+  display: flex;
+  width: 60vw;
   padding: var(--padding-size);
   justify-content: space-evenly;
   align-items: center;
+  column-gap: 20px;
 }
 
 .fa-github {
   color: var(--icon-github-color);
+  transition: all 1s;
+}
+
+.fa-github:hover {
+  color: var(--bg-github-hover);
 }
 
 .img-text {
   display: flex;
   flex-direction: column;
   padding: var(--padding-size);
-  font-size: var(--text-base);
   margin-bottom: var(--margin-size);
   align-items: center;
 }
@@ -142,6 +146,14 @@ h3 {
 .img-text a {
   text-decoration: none;
   color: var(--link-project-color);
+}
+
+.img-text a:hover {
+  text-decoration: underline;
+}
+
+.img-text a:visited {
+  color: var(--bg-github-hover);
 }
 
 .img-project {
@@ -177,14 +189,14 @@ h3 {
 .skill-element {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 20px;
+  column-gap: var(--col-gap);
 }
 
 .skill-element p {
-  border: 2px solid var(--bg-color);
+  border: var(--border-size) solid var(--bg-color);
   border-radius: 5%;
   height: fit-content;
-  padding: 10px;
+  padding: calc(var(--padding-size) / 2);
   color: var(--bg-color);
 }
 
@@ -196,6 +208,7 @@ h3 {
 
 #work-experience {
   padding: var(--padding-size);
+  transition: all 1.5s;
 }
 
 .h2-work-color {
@@ -216,7 +229,7 @@ h3 {
 .career-title-format h3 {
   padding: 0px 0px;
   margin: 0px 0px;
-  color: #00a8e8;
+  color: var(--h3-career-work);
 }
 
 .career-title-format h4 {
@@ -238,16 +251,14 @@ h3 {
   }
 
   .left-line {
-    border-left: 4px solid;
-    padding-left: 60px;
+    border-left: calc(var(--border-size) * 2) solid;
+    padding-left: calc(var(--padding-size) * 3);
   }
 
   .padding-margin {
     padding-left: calc(var(--margin-size) * 2);
     margin-bottom: calc(var(--margin-size) * 2);
-    transition: all 0.2s;
     font-size: medium;
-    transition: all 0.3s;
   }
 
   .padding-margin:hover {
@@ -278,14 +289,13 @@ h3 {
   }
 
   .left-line {
-    border-left: 4px solid;
-    padding-left: 60px;
+    border-left: calc(var(--border-size) * 2) solid;
+    padding-left: calc(var(--padding-size) * 3);
   }
 
   .padding-margin {
     padding-left: calc(var(--margin-size) * 2);
     margin-bottom: calc(var(--margin-size) * 2);
-    transition: all 0.3s;
   }
 
   .padding-margin:hover {
@@ -308,9 +318,17 @@ h3 {
     width: clamp(
       calc(var(--image-width) * 2),
       70%,
-      calc(var(--image-width) * 4) /* 560px */
+      calc(var(--image-width) * 4)
     );
     grid-row: span 3;
+  }
+
+  .container-project {
+    display: flex;
+    width: 50vw;
+    padding: var(--padding-size);
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .container-general-skills {
@@ -329,20 +347,19 @@ h3 {
   }
 
   .left-line-educ {
-    border-left: 4px solid;
-    padding-left: 60px;
+    border-left: calc(var(--border-size) * 2) solid;
+    padding-left: calc(var(--padding-size) * 3);
   }
 
   .right-line {
-    border-right: 4px solid;
-    padding-right: 60px;
+    border-right: calc(var(--border-size) * 2) solid;
+    padding-right: calc(var(--padding-size) * 3);
   }
 
   .padding-margin {
     padding-left: calc(var(--margin-size) * 2);
     margin-bottom: calc(var(--margin-size) * 2);
     font-size: medium;
-    transition: all 0.3s;
   }
 
   .padding-margin:hover {
