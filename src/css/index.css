@@ -356,6 +356,11 @@ h3 {
     margin-left: calc(var(--margin-size) * 2);
   }
 
+  .left-line-educ {
+    border-left: 4px solid;
+    padding-left: 60px;
+  }
+
   .right-line {
     border-right: 4px solid;
     padding-right: 60px;
