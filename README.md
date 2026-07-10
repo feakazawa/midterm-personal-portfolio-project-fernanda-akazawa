@@ -1,6 +1,6 @@
 # Mid Term - Personal Portfolio Website
 
-**Live Deployment Link:** [https://chipper-semifreddo-ec863c.netlify.app/src/]
+**Live Deployment Link:** [https://shimmering-treacle-3c6975.netlify.app/src/]
 
 ## Goal
 
