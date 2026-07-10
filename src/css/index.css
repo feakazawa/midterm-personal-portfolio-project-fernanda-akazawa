@@ -269,6 +269,11 @@ footer {
   color: var(--bg-github-hover);
 }
 
+.img-border {
+  border: var(--border-corner) solid;
+  border-radius: calc(var(--border-corner) * 2);
+}
+
 .img-project {
   width: 100%;
   border-radius: calc(var(--border-corner) * 2);
