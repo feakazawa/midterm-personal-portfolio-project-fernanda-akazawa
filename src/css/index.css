@@ -26,6 +26,7 @@
   --h3-career-work: #00a8e8;
   --bg-contact-color: #e1e5f2;
   --face-color: #fdc500;
+  --star-color: #ffee32;
 }
 
 * {
@@ -108,6 +109,10 @@ footer {
   align-content: center;
   background-color: var(--bg-about);
   color: var(--bg-color);
+}
+
+.fa-star {
+  color: var(--star-color);
 }
 
 #star1 {
