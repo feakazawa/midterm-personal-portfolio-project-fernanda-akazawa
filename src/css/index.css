@@ -58,11 +58,6 @@ footer {
   align-items: center;
 }
 
-h1 {
-  font-size: var(--header-xxl);
-  text-align: end;
-}
-
 .navbar {
   display: flex;
   flex-direction: column;
@@ -88,8 +83,58 @@ h1 {
 
 #home {
   height: 100vh;
+  display: grid;
+  grid-template-columns: 0.2fr 0.3fr 0.2fr;
+  justify-content: center;
+  align-items: center;
+}
 
-  /* transition: all 1s; */
+.container-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-welcome {
+  /* width: 70vw; */
+  height: 40vh;
+  border: 5px solid;
+  padding: var(--padding-size);
+  border-radius: 20%;
+  position: relative;
+  margin-bottom: calc(var(--margin-size) * 5);
+  align-content: center;
+}
+
+.container-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-headphones {
+  position: absolute;
+  top: 2vh;
+  right: 1vw;
+}
+
+.fa-keyboard {
+  position: absolute;
+  top: 2vh;
+  left: 1vw;
+}
+
+.fa-gamepad {
+  position: absolute;
+  top: 30vh;
+  right: 1vw;
+}
+
+.fa-face-grin-beam {
+  position: absolute;
+  top: 30vh;
+  left: 1vw;
 }
 
 #about {
@@ -319,6 +364,10 @@ h1 {
     font-size: var(--header-base);
   }
 
+  .container-welcome h1 {
+    font-size: var(--header-xxl);
+  }
+
   .container-about {
     display: flex;
     flex-direction: column;
@@ -341,6 +390,22 @@ h1 {
 
   p {
     font-size: calc(var(--header-base) * 1.1);
+  }
+
+  /* .container-welcome {
+    width: 70vw;
+    height: 40vh;
+    border: 5px solid;
+    padding: var(--padding-size);
+    border-radius: 20%;
+    text-align: center;
+    position: relative;
+    margin-bottom: calc(var(--margin-size) * 10);
+    align-content: center;
+  } */
+
+  .container-welcome h1 {
+    font-size: calc(var(--header-xxl) * 2);
   }
 
   .container-about {
@@ -411,6 +476,22 @@ h1 {
 
   p {
     font-size: calc(var(--header-base) * 1.1);
+  }
+
+  /* .container-welcome {
+    width: 70vw;
+    height: 40vh;
+    border: 5px solid;
+    padding: var(--padding-size);
+    border-radius: 20%;
+    text-align: center;
+    position: relative;
+    margin-bottom: calc(var(--margin-size) * 10);
+    align-content: center;
+  } */
+
+  .container-welcome h1 {
+    font-size: calc(var(--header-xxl) * 2);
   }
 
   .container-about {
