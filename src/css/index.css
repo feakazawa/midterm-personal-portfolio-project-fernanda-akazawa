@@ -27,6 +27,11 @@
   --bg-contact-color: #e1e5f2;
   --face-color: #fdc500;
   --star-color: #ffee32;
+  --star-color-0p: #ffb700;
+  --star-color-25p: #ffc300;
+  --star-color-50p: #ffd000;
+  --star-color-75p: #ffdd00;
+  --star-color-100p: #ffea00;
 }
 
 * {
@@ -89,7 +94,7 @@ footer {
   grid-template-columns: 0.1fr 0.4fr 0.1fr;
   justify-content: center;
   align-items: center;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .container-home {
@@ -111,8 +116,30 @@ footer {
   color: var(--bg-color);
 }
 
-.fa-star {
-  color: var(--star-color);
+.star-color {
+  background-color: var(--star-color);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: starry-night 1s infinite;
+}
+
+@keyframes starry-night {
+  0% {
+    background-color: var(--star-color-0p);
+  }
+  25% {
+    background-color: var(--star-color-25p);
+  }
+  50% {
+    background-color: var(--star-color-50p);
+  }
+  75% {
+    background-color: var(--star-color-75p);
+  }
+  100% {
+    background-color: var(--star-color-100p);
+  }
 }
 
 #star1 {
